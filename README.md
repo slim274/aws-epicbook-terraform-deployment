@@ -2,7 +2,7 @@
 
 **Infrastructure as Code | Amazon EC2 | Amazon RDS MySQL | Node.js/Express | Nginx**
 
-This repository documents the **Week 10, Assignment 4** deployment of the EpicBook monolithic bookstore application on AWS. Terraform was used to provision a VPC, networking, security groups, an Ubuntu EC2 instance and an RDS MySQL database. The application was configured on EC2, served through Nginx and connected to the RDS instance. Screenshots and practical findings are from the original internship report.
+This repository deployment of the EpicBook monolithic bookstore application on AWS. Terraform was used to provision a VPC, networking, security groups, an Ubuntu EC2 instance and an RDS MySQL database. The application was configured on EC2, served through Nginx and connected to the RDS instance. Screenshots and practical findings are from the original internship report.
 
 > **Project scope:** This is the **Terraform-based AWS implementation**. The application is monolithic even though its database runs in a separate infrastructure tier. It is distinct from the earlier manually provisioned EpicBook project. This ZIP contains **documentation and evidence only**; add your own reviewed Terraform files separately.
 
