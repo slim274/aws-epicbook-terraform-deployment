@@ -1,0 +1,21 @@
+# Terraform state
+*.tfstate
+*.tfstate.*
+.terraform/
+
+# Terraform sensitive files
+*.tfvars
+*.tfvars.json
+*.tfplan
+crash.log
+
+# Credentials
+.env
+.env.*
+*.pem
+*.key
+id_rsa
+id_ed25519
+
+# System files
+.DS_Store

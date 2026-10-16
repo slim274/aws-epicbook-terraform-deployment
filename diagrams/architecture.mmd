@@ -1,0 +1,13 @@
+flowchart TD
+    U[Internet / browser] -->|HTTP 80| E[EC2 Ubuntu 22.04 - public subnet]
+    subgraph VPC[AWS VPC]
+        subgraph PUBLIC[Public subnet]
+            E --> NG[Nginx reverse proxy]
+            NG --> APP[Node.js / Express EpicBook monolith]
+        end
+        subgraph PRIVATE[Private database subnets across availability zones]
+            RDS[(Amazon RDS for MySQL)]
+        end
+        APP -->|MySQL 3306 - security group restricted| RDS
+    end
+    T[Terraform IaC] -.provisions.-> VPC
